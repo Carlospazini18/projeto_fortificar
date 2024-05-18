@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS fortificar_BD DEFAULT CHARACTER SET utf8mb4;
-USE fortificar_BD;
+CREATE SCHEMA IF NOT EXISTS fortificar DEFAULT CHARACTER SET utf8mb4;
+USE fortificar;
 
 CREATE TABLE IF NOT EXISTS usuarios_ongs (
 email VARCHAR(40) PRIMARY KEY,
@@ -54,7 +54,7 @@ data_envio DATE NOT NULL,
 id_projeto INT NOT NULL,
 id_requisicao INT NOT NULL,
 CONSTRAINT id_projeto_documentos FOREIGN KEY(id_projeto) REFERENCES projetos(id),
-CONSTRAINT id_requisicao_documentos FOREIGN KEY(id_requisicao) REFERENCES solicitacoes(id) 
+CONSTRAINT id_requisicao_documentos FOREIGN KEY(id_requisicao) REFERENCES requisicoes(id) 
 );
 
 CREATE TABLE IF NOT EXISTS agendamentos (
