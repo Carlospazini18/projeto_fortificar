@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.dashboard {
+    min-width: 250px;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border-radius: 20px;
+}
+
+.coluna1 {
+    width: 60%;
+    min-width: 250px;
+}
+
+.coluna2 {
+    width: 30%;
+    min-width: 250px;
+}
+
+.valores {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.valor_disponivel, .valor_gasto {
+    width: 45%;
+    min-width: 230px;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 20px;
+    height: 15vh;
+    min-height: 90px;
+    max-height: 100px;
+    box-shadow: 0px 4px 4px #04bfbf7e;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+.agendamentos {
+    margin-top: 20px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #04bfbf7e;
+}
+
+.coluna_dias_hoje {
+    width: 50%;
+    min-width: 250px;
+    padding-right: 10px;
+}
+
+.coluna_amanha {
+     width: 40%;
+     min-width: 200px;
+     padding-right: 10px;
+}
+
+.agendamentos > main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.solicitacoes {
+    margin-top: 15px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #04bfbf7e;
+}
+
+
+.agendamentos > header, .solicitacoes > header {
+    background-color: #04B071;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    height: 8vh;
+    min-height: 40px;
+    line-height: 100%;
+}
+
+.agendamentos  h2, .solicitacoes h2 {
+    padding-left: 10px;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 22px;
+}
+
+.valor_disponivel > header, .valor_gasto > header {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.valor_disponivel > header {
+    color: #04B071;
+}
+
+.valor_gasto > header {
+    color: #FF3939;
+}
+
+.valor_disponivel  span, .valor_gasto  span {
+    font-weight: bold;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 20px;
+    
+}
+
+.valor_disponivel  span {
+    color: #04B071;
+}
+
+.valor_gasto  span {
+    color: #FF3939;
+}
+
+.valor_disponivel  img, .valor_gasto  img {
+    width: 30px;
+}
+
+.valor_disponivel  div, .valor_gasto  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 230px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.semana header {
+    font-size: 20px;
+    color: #04BFBF;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.semana {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.dias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.dias div {
+    background-color: #04BFBF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 20px;
+}
+
+.hoje {
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid #04BFBF;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.hoje header {
+    background-color: #04BFBF;
+    height: 5vh;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+    line-height: 5vh;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hoje ul {
+    list-style-type: none;
+    height: 100px;
+}
+
+.amanha {
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid #04BFBF;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    min-width: 180px;
+}
+
+.amanha header {
+    background-color: #04BFBF;
+    height: 5vh;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+    line-height: 5vh;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.amanha ul {
+    list-style-type: none;
+    height: 100px;
+}
