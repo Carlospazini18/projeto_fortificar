@@ -283,6 +283,11 @@ body, html {
         align-items: center;
         gap: 5px;
     }
+
+    #bt-cad {
+        width: fit-content;
+    }
+
     @media screen and (max-width: 380px) {
         body {
             display: block;
@@ -311,6 +316,9 @@ body, html {
 
         fieldset {
             min-width: 200px;
+        }
+        #bt-cad {
+            width: fit-content;
         }
     }
 }
