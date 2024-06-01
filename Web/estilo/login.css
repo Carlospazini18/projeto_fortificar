@@ -85,6 +85,7 @@ body, html {
     }
 
 
+
     input[type="email"], input[type="password"] {
         max-width: 300px;
         height: 40px;
@@ -95,6 +96,7 @@ body, html {
         color: #034c8c81;
         align-items: center;
         font-family: "Black Han Sans";
+        outline: none;
     }
 
     input[type="email"] {
@@ -118,7 +120,7 @@ body, html {
         height: 45px;
         padding: 0px 10px;
         line-height: 45px;
-        max-width: 100px;
+        width: 100px;
         border: 1px solid #04B071;
         color: #f1f1f1;
         font-size: 18px;
@@ -127,9 +129,15 @@ body, html {
         border-radius: 10px;
     }
 
+
+
     input[type="button"]:hover {
         background-color: #034C8C;
         cursor: pointer;
+    }
+
+    #bt-cad {
+        width: fit-content;
     }
 
     .txt-bottom {
@@ -143,6 +151,7 @@ body, html {
         align-items: center;
         gap: 5px;
     }
+
 }
 
 @media screen and (max-width: 650px){
@@ -274,4 +283,35 @@ body, html {
         align-items: center;
         gap: 5px;
     }
+    @media screen and (max-width: 380px) {
+        body {
+            display: block;
+        }
+        main, header {
+            width: 100%;
+            border-radius: 0;
+        }
+        main{
+            height: 100%;
+        }
+        input[type="email"], input[type="password"] {
+            min-width: 150px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 30px;
+            border-radius: 10px;
+            border: 2px solid #034C8C;
+            color: #034c8c81;
+            align-items: center;
+            font-family: "Black Han Sans";
+            background-size: 20px;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            min-width: 200px;
+        }
+    }
 }
+
