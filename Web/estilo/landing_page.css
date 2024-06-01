@@ -389,6 +389,7 @@
         flex-direction: row;
         gap: 5px;
         width: 120px;
+        align-items: center;
     }
 
     .fortes_logo {
@@ -677,6 +678,7 @@
         flex-direction: row;
         gap: 3px;
         width: 120px;
+        align-items: center;
     }
 
     .fortes_logo {
