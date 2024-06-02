@@ -21,15 +21,18 @@
                 <fieldset class="login">
                     <legend>Insira seus dados para realizar o login</legend>
 
-                    <input type="email" name="" id="" placeholder="digite o seu email">
-                    <input type="password" name="" id="" placeholder="digite a sua senha">
+                    <input type="email" name="email" id="EmailUsuario" placeholder="digite o seu email">
+                    <input type="password" name="senha" id="PasswordUsuario" placeholder="digite a sua senha">
 
                     <label for="sv-login">
                         <input type="checkbox" name="sv-login" id="sv-login"> salvar login
                     </label>
 
-                    <input type="button" value="entrar">
+                    <div id="ErroLogin"></div>
 
+                    <input type="button" value="entrar" onclick="logar()">
+
+                
                     <div class="txt-bottom">
                         <span>não possui conta? <a href="./cadastro.html">cadastre-se aqui</a></span>
                     </div>
@@ -45,6 +48,8 @@
         </article>
 
     </main>
+
+    <script src="../script/login.js"></script>
     
 </body>
 </html>
