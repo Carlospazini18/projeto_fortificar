@@ -33,14 +33,6 @@ vermelho: #FF3939
     color: #FF3939;
 }
 
-
-
-body {
-     background-color: #f1f1f1;
-     max-width: 1300px;
-     margin: 0 auto;
-}
-
 .bg-white {
     background-color: #ffff;
 }
@@ -121,6 +113,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    background-color: #f1f1f1;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -178,6 +175,11 @@ body {
     body,html {
         height: 100%;
         width: 100%;
+    }
+
+    nav > img {
+        width: 50px;
+        height: 40px;
     }
 
     .dinheiro {
@@ -312,9 +314,18 @@ body {
         line-height: 20px;
     }
 
+    body {
+        padding-top: 40px;
+    }
+
 }   
 
 @media screen and (min-width: 500px) and (max-width: 849px){
+
+    nav > img {
+        width: 50px;
+        height: 40px;
+    }
 
     .dinheiro {
         width: 240px;
@@ -451,7 +462,7 @@ body {
     }
 
     body {
-        padding: 10px 0;
+        padding-top: 80px;
     }
 
 }
@@ -603,8 +614,7 @@ body {
     }
 
     body {
-        padding: 10px 0;
-        margin-top: 70px;
+        padding-top: 80px;
     }
 
     nav > img {
