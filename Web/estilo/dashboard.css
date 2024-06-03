@@ -281,7 +281,7 @@ body {
 
 }   
 
-@media screen and (max-width: 849px) {
+@media screen and (min-width: 500px) and (max-width: 849px){
 
     .dinheiro {
         width: 240px;
@@ -421,6 +421,161 @@ body {
 
     body {
         padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+    #saldo-negativo, #saldo-positivo {
+        width: 250px;
+    }
+
+    .dinheiro {
+        min-width: 250px;
+        max-width: 400px;
+        height: 60px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .porquinho {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-art {
+        height: 30px;
+        padding: 5px 5px 5px 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #valores {
+        max-width: 499px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-dinheiro {
+        padding: 20px 5px 5px 20px;
+    }
+
+    .txt-dinheiro {
+        font-size: 20px;
+    }
+
+
+
+    /**/
+
+
+    #agendamentos {
+        max-width: 400px;
+        padding-bottom: 20px;
+    }
+
+    .header-art > img {
+        width: 25px;
+
+    }
+
+    .dia {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .dias-semana {
+        gap: 5px;
+        margin-top: 5px;
+    }
+    
+    .hoje {
+        width: 205px;
+    }
+
+    .div-agen {
+        padding: 10px 30px;
+    }
+
+    .div-hoje {
+        height: 80px;
+    }
+
+    .coluna1-agen {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .header-agen {
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .cont-agen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .amanha {
+        margin-top: 10px;
+        height: 70px;
+        width: 205px;
+    }
+
+    .div-amanha {
+        height: 80%;
+    }
+
+    #solicitacoes {
+        height: 100%;
+        min-width: 250px;
+        max-height: 400px;
+    }
+
+    #solicitacoes ul {
+        list-style-image: url(../icones/Male\ User.png);
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #solicitacoes a {
+        line-height: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cont-soli {
+        padding: 15px;
+        height: 200px;
+        color: #034C8C;
+    }
+
+    body {
+        padding-top: 10px;
+    }
+
+    nav > img {
+        width: 50px;
+        height: 40px;
     }
 
 }
