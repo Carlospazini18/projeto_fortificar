@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="../../estilo/dashboard.css">
 </head>
 <body>
-    <nav class="div-menu">
-        <img src="../../icones/Menu.png" alt="menu" onclick="AbrirMenu()" class="menu">
+    <nav id="menu" style="box-sizing: border-box;">
+        <img src="../../icones/Menu.png" alt="menu" onclick="AbrirMenu()" nclick="AbrirMenu()" id="img-menu">
+
+        <ul id="op-menu">
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Solicitações</a></li>
+            <li><a href="">Agentamentos</a></li>
+            <li><a href="">Reqisições</a></li>
+        </ul>
     </nav>
     <main>
 
@@ -28,7 +36,7 @@
                 </section>
                 <section class="saldo sombra bg-white radius-conteiner" id="saldo-negativo">
                     <header class="header-dinheiro txt-vermelho">
-                        valor disponível
+                        valor utilizado
                     </header>
                     <div class="dinheiro flex-row between aling-center txt-vermelho">
             
@@ -114,5 +122,7 @@
        
 
     </main>
+
+    <script src="../../script/menu.js"></script>
 </body>
 </html>

@@ -34,6 +34,7 @@ vermelho: #FF3939
 }
 
 
+
 body {
      background-color: #f1f1f1;
      max-width: 1300px;
@@ -132,12 +133,44 @@ body {
     text-decoration: underline;
 }
 
-.menu {
-    cursor: pointer;
+#menu {
+    padding-top: 10px;
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
-.div-menu{
-    width: 100%;
+#menu a {
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+    display: block;
+    width: 230px;
+    font-family: "Black Han Sans", sans-serif;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: #f1f1f1;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 40px;
+    display: none;
+}
+
+#menu img {
+    cursor: pointer;
+    width: 50px;
 }
 
 @media screen and (min-width: 850px) {
@@ -359,7 +392,6 @@ body {
     }
 
     .coluna1-agen {
-        margin-left: 10px;
         margin-top: 10px;
         gap: 10px;
     }
@@ -374,12 +406,11 @@ body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        align-items: center;
     }
 
     .amanha {
         margin-top: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
         height: 100%;
         width: 385px;
     }
@@ -420,14 +451,14 @@ body {
     }
 
     body {
-        padding-top: 10px;
+        padding: 10px 0;
     }
 
 }
 
 @media screen and (max-width: 499px) {
     #saldo-negativo, #saldo-positivo {
-        width: 250px;
+        max-width: 250px;
     }
 
     .dinheiro {
@@ -555,6 +586,7 @@ body {
 
     #solicitacoes a {
         line-height: 20px;
+        font-size: 16px;
     }
 
     main {
@@ -567,10 +599,12 @@ body {
         padding: 15px;
         height: 200px;
         color: #034C8C;
+
     }
 
     body {
-        padding-top: 10px;
+        padding: 10px 0;
+        margin-top: 70px;
     }
 
     nav > img {
