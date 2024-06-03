@@ -4,9 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - fortificar</title>
-    <link rel="stylesheet" href="../estilo/dashboard.css">
+    <link rel="stylesheet" href="../../estilo/dashboard.css">
 </head>
 <body>
-    
+    <nav class="div-menu">
+        <img src="../../icones/Menu.png" alt="menu" onclick="AbrirMenu()" class="menu">
+    </nav>
+    <main>
+
+        <div id="coluna1">
+            <article id="valores" class="flex-row between">
+                <section class="saldo sombra bg-white radius-conteiner" id="saldo-positivo">
+                    <header class="header-dinheiro txt-verde">
+                        valor disponível
+                    </header>
+                    <div class="dinheiro flex-row between aling-center txt-verde">
+                        <img src="../../icones/Money_Box_verde.png" alt="porquinho verde" class="porquinho">
+                        <span class="flex-row between">
+                            <span class="txt-dinheiro">R$ </span>
+                            <span class="txt-dinheiro">1.000.000,00</span>
+                        </span>
+                    </div>
+                </section>
+                <section class="saldo sombra bg-white radius-conteiner" id="saldo-negativo">
+                    <header class="header-dinheiro txt-vermelho">
+                        valor disponível
+                    </header>
+                    <div class="dinheiro flex-row between aling-center txt-vermelho">
+            
+                        <img src="../../icones/Money_Box_vermelho.png" alt="porquinho vermelho" class="porquinho">
+                        <span class="flex-row between">
+                            <span class="txt-dinheiro">R$ </span>
+                            <span class="txt-dinheiro">50.000,00</span>
+                        </span>
+                    </div>
+            
+                </section>
+            </article>
+
+            <article id="agendamentos" class="sombra bg-white radius-conteiner">
+
+                <header class="header-art">
+                    <img src="../../icones/Tear-Off Calendar.png" alt="">Agendamentos
+                </header>
+
+                <div class="cont-agen">
+                    <div class="coluna1-agen">
+                        <section class="semana"">
+                            <header class="header-semana">
+                                semana:
+                            </header>
+                            <div class="dias-semana">
+                                <div class="dia">1</div>
+                                <div class="dia">2</div>
+                                <div class="dia">3</div>
+                                <div class="dia">4</div>
+                                <div class="dia">5</div>
+                                <div class="dia">6</div>
+                                <div class="dia">7</div>
+                            </div>
+                        </section>
+                        <section class="hoje">
+                            <header class="header-agen">
+                                hoje
+                            </header>
+                            <div class="div-agen div-hoje">
+                                <ul>
+                                    <li>Evento: doação de marmitas</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="coluna3">
+                        <section class="amanha">
+                            <header class="header-agen">
+                                amanhã
+                            </header>
+                            <div class="div-agen div-amanha">
+                                <ul>
+                                    <li>Reunião: projeto +sabor</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+            </article>
+        </div>
+
+
+        <div id="coluna2">
+            <article id="solicitacoes">
+                <section class="bg-white sombra radius-conteiner">
+                    <header class="header-art">
+                        Solicitações
+                    </header>
+
+                    <div class="cont-soli">
+                        <ul>
+                            <li><a href="">Distribuição de marmitas</a></li>
+                            <li><a href="">Projeto AB</a></li>
+                            <li><a href="">Arrecadação</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </div>
+       
+
+    </main>
 </body>
 </html>
