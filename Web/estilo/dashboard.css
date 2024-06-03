@@ -263,7 +263,7 @@ body {
 
     #solicitacoes {
         height: 100%;
-        min-width: 200px;
+        min-width: 150px;
         max-height: 500px;
     }
 
@@ -277,7 +277,6 @@ body {
 
     #solicitacoes a {
         line-height: 20px;
-
     }
 
 }   
