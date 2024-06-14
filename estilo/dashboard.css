@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-art {
+    background-color: #04B071;
+    color: white;
+    font-family: "Black Han Sans", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.txt-verde {
+    color: #04B071;
+}
+
+.txt-vermelho{
+    color: #FF3939;
+}
+
+.bg-white {
+    background-color: #ffff;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.radius-conteiner {
+    border-radius: 20px;
+}
+
+.aling-center {
+    align-items: center;
+}
+
+.sombra {
+    box-shadow: 0px 4px 4px #04bfbf81;
+}
+
+
+.txt-dinheiro {
+    font-family: "Black Han Sans", sans-serif;
+}
+
+#coluna1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header-semana {
+    color: #04BFBF;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.dias-semana {
+    display: flex;
+    flex-direction: row;
+}
+
+.dia {
+    background-color: #04BFBF;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.div-agen {
+    border: 1px solid #04BFBF;
+    border-radius: 0 0 20px 20px;
+    color: #04BFBF;
+}
+
+.header-agen {
+    background-color: #04BFBF;
+    color: white;
+    line-height: 100%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.coluna1-agen {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#solicitacoes a {
+    text-decoration: none;
+
+}
+
+#solicitacoes a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    padding-top: 10px;
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+    display: block;
+    width: 230px;
+    font-family: "Black Han Sans", sans-serif;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: #f1f1f1;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 40px;
+    display: none;
+}
+
+#menu img {
+    cursor: pointer;
+    width: 50px;
+}
+
+@media screen and (min-width: 850px) {
+    
+    body,html {
+        height: 100%;
+        width: 100%;
+    }
+
+    nav > img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .dinheiro {
+        width: 300px;
+        height: 80px;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .porquinho {
+        width: 40px;
+        height: 40px;
+    }
+
+    #valores {
+        width: 620px;
+    }
+
+    .header-art {
+        height: 30px;
+        padding: 5px 5px 5px 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .header-dinheiro {
+        padding: 20px 5px 5px 20px;
+    }
+
+    .txt-dinheiro {
+        font-size: 22px;
+    }
+
+    #agendamentos {
+        width: 620px;
+        padding-bottom: 20px;
+    }
+
+    .header-art {
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header-art > img {
+        width: 25px;
+    }
+
+    .dia {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .dias-semana {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .hoje {
+        width: 385px;
+    }
+
+    .div-agen {
+        padding: 10px 30px;
+    }
+
+    .div-hoje {
+        height: 80px;
+    }
+        
+    .coluna1-agen {
+        margin-left: 10px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .header-agen {
+        height: 30px;
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .cont-agen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .amanha {
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 100%;
+    }
+
+    .div-amanha {
+        height: 80%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .cont-soli {
+        padding: 15px;
+        height: 390px;
+        color: #034C8C;
+    }
+
+    #solicitacoes {
+        height: 100%;
+        min-width: 150px;
+        max-height: 500px;
+    }
+
+    #solicitacoes ul {
+        list-style-image: url(../icones/Male\ User.png);
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #solicitacoes a {
+        line-height: 20px;
+    }
+
+    body {
+        padding-top: 40px;
+    }
+
+}   
+
+@media screen and (min-width: 500px) and (max-width: 849px){
+
+    nav > img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .dinheiro {
+        width: 240px;
+        height: 70px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .porquinho {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-art {
+        height: 30px;
+        padding: 5px 5px 5px 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    #valores {
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    .header-dinheiro {
+        padding: 20px 5px 5px 20px;
+    }
+
+    .txt-dinheiro {
+        font-size: 22px;
+    }
+
+    #agendamentos {
+        width: 500px;
+        padding-bottom: 20px;
+    }
+
+    .header-art {
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header-art > img {
+        width: 25px;
+
+    }
+
+    .dia {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .dias-semana {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .hoje {
+        width: 385px;
+    }
+
+    .div-agen {
+        padding: 10px 30px;
+    }
+
+    .div-hoje {
+        height: 80px;
+    }
+
+    .coluna1-agen {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .header-agen {
+        height: 30px;
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .cont-agen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .amanha {
+        margin-top: 10px;
+        height: 100%;
+        width: 385px;
+    }
+
+    .div-amanha {
+        height: 80%;
+    }
+
+    #solicitacoes {
+        height: 100%;
+        min-width: 200px;
+        max-height: 500px;
+    }
+
+    #solicitacoes ul {
+        list-style-image: url(../icones/Male\ User.png);
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #solicitacoes a {
+        line-height: 20px;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cont-soli {
+        padding: 15px;
+        height: 200px;
+        color: #034C8C;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+    #saldo-negativo, #saldo-positivo {
+        max-width: 250px;
+    }
+
+    .dinheiro {
+        min-width: 250px;
+        max-width: 400px;
+        height: 60px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .porquinho {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-art {
+        height: 30px;
+        padding: 5px 5px 5px 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #valores {
+        max-width: 499px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-dinheiro {
+        padding: 20px 5px 5px 20px;
+    }
+
+    .txt-dinheiro {
+        font-size: 20px;
+    }
+
+
+
+    /**/
+
+
+    #agendamentos {
+        max-width: 400px;
+        padding-bottom: 20px;
+    }
+
+    .header-art > img {
+        width: 25px;
+
+    }
+
+    .dia {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .dias-semana {
+        gap: 5px;
+        margin-top: 5px;
+    }
+    
+    .hoje {
+        width: 205px;
+    }
+
+    .div-agen {
+        padding: 10px 30px;
+    }
+
+    .div-hoje {
+        height: 80px;
+    }
+
+    .coluna1-agen {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .header-agen {
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .cont-agen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .amanha {
+        margin-top: 10px;
+        height: 70px;
+        width: 205px;
+    }
+
+    .div-amanha {
+        height: 80%;
+    }
+
+    #solicitacoes {
+        height: 100%;
+        min-width: 250px;
+        max-height: 400px;
+    }
+
+    #solicitacoes ul {
+        list-style-image: url(../icones/Male\ User.png);
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #solicitacoes a {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cont-soli {
+        padding: 15px;
+        height: 200px;
+        color: #034C8C;
+
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    nav > img {
+        width: 50px;
+        height: 40px;
+    }
+
+}

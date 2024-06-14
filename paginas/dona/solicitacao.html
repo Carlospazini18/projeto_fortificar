@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação - Fortificar</title>
+    <link rel="stylesheet" href="../../estilo/solicitacao.css">
+</head>
+<body>
+    </nav>
+    <main>
+        <article id="agendamentos-semana" class="sombra bg-white radius-conteiner">
+            <header class="header-art">
+                <img src="../../icones/Tear-Off Calendar.png" alt="">Solicitação
+            </header>
+            <div class="formulario-solicitacao">
+                <div class="button-container">
+                    <button class="btn-voltar"><a href="./resultado.html" style="text-decoration: none; color: white;">Voltar</a></button>
+                    <button id="btn-buscar" class="btn-responder">buscar</button>
+                    <button id="btn-enviar" class="btn-responder">enviar</button>
+                    <button id="btn-atualizar" class="btn-responder">atualizar</button>
+                    <button id="btn-deletar" class="btn-deletar">deletar</button> <!-- Botão de deletar -->
+                </div>
+                <form id="form-solicitacao" action="#" method="POST">
+                    <div class="form-row full-width">
+                        <div class="label-column">
+                            <label for="solicitacao">Solicitação:</label>
+                        </div>
+                        <div class="input-column">
+                            <input type="number" id="solicitacao" name="solicitacao" placeholder="001806" class="input-text" required>
+                        </div>
+                    </div>
+                    <div class="form-row full-width">
+                        <div class="label-column">
+                            <label for="nome">Projeto:</label>
+                        </div>
+                        <div class="input-column">
+                            <input type="text" id="nome" name="nome" placeholder="Projeto distribuição de marmita" class="input-text" required>
+                        </div>
+                    </div>
+                    <div class="form-row full-width">
+                        <div class="label-column">
+                            <label for="status">Status:</label>
+                        </div>
+                        <div class="input-column">
+                            <div class="status-container">
+                                <div class="status-dropdown">
+                                    <input type="text" id="status" name="status" placeholder="escolha uma opção" class="input-text" readonly>
+                                    <button type="button" class="dropdown-button">&#9660;</button>
+                                    <ul class="dropdown-menu">
+                                        <li>análise</li>
+                                        <li>aprovado</li>
+                                        <li>negado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row full-width">
+                        <div class="confirmation-box">
+                            <label for="date" class="confirmation-label">Solicitar agendamento:</label>
+                            <div class="input-group">
+                                <input type="date" id="date" name="date" class="confirmation-input" required>
+                                <input type="time" id="time" name="time" class="confirmation-input" required>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="confirm-agendamento" value="sim"> sim</label>
+                                    <label><input type="radio" name="confirm-agendamento" value="não"> não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirmation-box">
+                            <label for="amount" class="confirmation-label">Solicitar doação?</label>
+                            <div class="input-group">
+
+                                <input type="text" id="amount" name="amount" placeholder="R$ 500,00" class="confirmation-input money-input">
+                                <div class="radio-group">
+                                    <label><input type="radio" name="confirm-doacao" value="sim"> sim</label>
+                                    <label><input type="radio" name="confirm-doacao" value="não"> não</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row full-width">
+                        <div class="label-column">
+                            <label for="area">Descrição:</label>
+                        </div>
+                        <div class="input-column">
+                            <input type="text" id="area" name="area" placeholder="Digite uma resposta ou detalhe uma Requisição..." class="input-text">
+                        </div>
+                    </div>
+                </form>
+            </div>           
+        </article>
+    </main>
+    <script src="../../script/menu.js"></script>
+    <script src="../../script/solicitacao.js"></script> 
+    <script src="../../script/nav.js"></script>
+</body>
+</html>

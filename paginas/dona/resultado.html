@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Fortificar</title>
+    <link rel="stylesheet" href="../../estilo/resultado.css">
+</head>
+<body>
+    <nav id="menu" style="box-sizing: border-box;">
+        <img src="../../icones/Menu.png" alt="menu" onclick="AbrirMenu()" id="img-menu">
+        <ul id="op-menu">
+            <li><a href="#">Solicitações</a></li>
+            <li><a href="./solicitacao.html">Nova solicitação</a></li>
+            <li><a href="../login.html">Sair</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="resultados" class="sombra bg-white radius-conteiner">
+            <header class="header-art">
+                <img src="../../icones/Tear-Off Calendar.png" alt="Resultados">Resultados
+            </header>
+            <div class="filtros-container">
+                <label for="filtro" class="filtro-label">Filtros:</label>
+                
+                <div>
+                    <input type="text" id="filtro-pesquisa" placeholder="Pesquisar" class="input-text filtro-input">
+                    <button id="btn-pesquisar" class="btn-filtro">&#128269; pesquisar</button>
+                </div>
+                
+                <div>
+                    <input type="date" id="filtro-data" class="input-text filtro-input">
+                    <button id="btn-data" class="btn-filtro">&#128197;</button>
+                </div>
+                
+                <div>
+                    <select id="filtro-status" class="input-text filtro-input">
+                        <option value="">Status</option>
+                        <option value="análise">Análise</option>
+                        <option value="aprovado">Aprovado</option>
+                        <option value="negado">Negado</option>
+                    </select>
+                    <button id="btn-status" class="btn-filtro">&#9660;</button>
+                </div>
+
+            </div>
+            <div class="tabela-container">
+                <table id="tabela-resultados">
+                    <thead>
+                        <tr>
+                            <!-- LEMBRE DE APLICAR ESSAS CLASSES NOS ELMENTOS INSERIDOS NA TABELA PELO CRUD-->
+                            <th class="numero-soli">nº solicitação</th>
+                            <th>nome</th>
+                            <th class="data-soli">data</th>
+                            <th class="categoria-soli">categoria</th>
+                            <th class="status-soli">status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Resultados dinâmicos serão inseridos aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../../script/menu.js"></script>
+    <script src="../../script/resultado.js"></script>
+</body>
+</html>
