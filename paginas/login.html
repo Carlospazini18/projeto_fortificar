@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - fortificar</title>
+
+    <link rel="stylesheet" href="../estilo/login.css">
+    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <article>
+
+            <section>
+
+                <fieldset class="login">
+                    <legend>Insira seus dados para realizar o login</legend>
+
+                    <input type="email" name="email" id="EmailUsuario" placeholder="digite o seu email">
+                    <input type="password" name="senha" id="PasswordUsuario" placeholder="digite a sua senha">
+
+                    <label for="sv-login">
+                        <input type="checkbox" name="sv-login" id="sv-login"> salvar login
+                    </label>
+
+                    <div id="ErroLogin"></div>
+
+                    <input type="button" value="entrar" onclick="logar()">
+
+                
+                    <div class="txt-bottom">
+                        <span>não possui conta? <a href="./cadastro.html">cadastre-se aqui</a></span>
+                    </div>
+
+                </fieldset>
+
+            </section>
+
+            <section class="bg-login">
+                
+            </section>
+
+        </article>
+
+    </main>
+
+    <script src="../script/login.js"></script>
+    
+</body>
+</html>
